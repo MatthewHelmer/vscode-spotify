@@ -74,7 +74,7 @@ export class TreePlaylistProvider implements vscode.TreeDataProvider<Playlist> {
 class PlaylistTreeItem extends vscode.TreeItem {
 
     get tooltip(): string {
-        return `${this.playlist.id}:${this.label}`;
+        return `${this.playlist.description}`;
     }
 
     iconPath = {
